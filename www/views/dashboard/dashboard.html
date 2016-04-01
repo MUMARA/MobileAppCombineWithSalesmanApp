@@ -1,18 +1,32 @@
-<div class="bar bar-header bar-positive">
-  <h1 class="title">NOW WELCOME ADMIN!</h1>
+<div class="bar bar-header bar-light">
+  <h1 class="title">bar-light</h1>
 </div>
+<br/>
+<br/>
 
-<br />
-<br />
 
-<button class="button button-positive" ui-sref="registerCompany">
-  Register Your Company
+
+<div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" ng-model="order.productName" placeholder="Product Name">
+  </label>
+  <!--<label class="item item-input">
+    <input type="number" ng-model="order.productQuantity" placeholder="Product Quantity">
+  </label>
+  <label class="item item-input">
+    <input type="text" ng-model="order.productComments" placeholder="Comments">
+  </label>-->
+</div>
+<div>
+{{arr.incomingText}}
+</div>
+<!--
+ <p> Product Name {{order.productName}}<br/> Product Quantity {{order.productQuantity}} <br/> Comments {{order.productComments}}</p>
+-->
+<button class="button button-positive" ng-click="orderFunction(order)">
+  Order
 </button>
 
-<button class="button button-positive" ui-sref="companyMainPage">
-  Your Company Profile
-</button>
 
-<button class="button button-positive" ng-click="logOut()">
-  LOG OUT
-</button>
+
+

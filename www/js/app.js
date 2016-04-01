@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
-    
+
     .controller("appController",function($rootScope){
         $rootScope.url = "http://localhost:3000";
         console.log("sdfsdf");
@@ -18,7 +18,7 @@ angular.module('starter', ['ionic'])
      $urlRouterProvider.otherwise("/signIn");
 
      $stateProvider
-      
+
       .state("signIn", {
         url: "/signIn",
         templateUrl: "views/signIn/signIn.html",
